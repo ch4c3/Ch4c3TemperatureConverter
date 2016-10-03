@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ch4c3TemperatureConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert °F to °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-ta-BSu">
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07e-xE-xdG">
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAo-wr-Ii3">
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51k-Jg-ZOT">
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkI-Yz-Kfr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grc-TD-WnL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-aa-5Kj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="51k-Jg-ZOT" firstAttribute="top" secondItem="xAo-wr-Ii3" secondAttribute="bottom" constant="30" id="0fk-yJ-eRc"/>
+                            <constraint firstItem="xAo-wr-Ii3" firstAttribute="top" secondItem="07e-xE-xdG" secondAttribute="bottom" constant="30" id="LxD-e6-H7h"/>
+                            <constraint firstItem="ycX-ta-BSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pn5-2q-usX"/>
+                            <constraint firstItem="ycX-ta-BSu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="R3k-KX-5nT"/>
+                            <constraint firstItem="07e-xE-xdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Roz-qm-bc8"/>
+                            <constraint firstItem="07e-xE-xdG" firstAttribute="top" secondItem="ycX-ta-BSu" secondAttribute="bottom" constant="30" id="SZW-le-E4k"/>
+                            <constraint firstItem="51k-Jg-ZOT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsh-Cg-T9W"/>
+                            <constraint firstItem="grc-TD-WnL" firstAttribute="centerY" secondItem="07e-xE-xdG" secondAttribute="centerY" id="XuM-qE-Zxa"/>
+                            <constraint firstItem="xAo-wr-Ii3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aIm-Hg-QDV"/>
+                            <constraint firstItem="svA-aa-5Kj" firstAttribute="leading" secondItem="xAo-wr-Ii3" secondAttribute="trailing" constant="5" id="dxK-3h-qoV"/>
+                            <constraint firstItem="svA-aa-5Kj" firstAttribute="centerY" secondItem="xAo-wr-Ii3" secondAttribute="centerY" id="t9c-fW-APq"/>
+                            <constraint firstItem="grc-TD-WnL" firstAttribute="leading" secondItem="07e-xE-xdG" secondAttribute="trailing" constant="5" id="veE-pG-ZJu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conversion" destination="07e-xE-xdG" id="yOI-Ln-EA8"/>
+                        <outlet property="temperatureEntered" destination="xAo-wr-Ii3" id="atd-qg-pqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="359"/>
+        </scene>
+    </scenes>
+</document>
